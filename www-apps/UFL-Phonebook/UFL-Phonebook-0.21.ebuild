@@ -16,6 +16,7 @@ SRC_TEST="do"
 
 IUSE="test"
 RDEPEND="dev-lang/perl
+	dev-perl/Authen-SASL
 	>=dev-perl/Catalyst-Runtime-5.7006
 	dev-perl/Catalyst-Action-RenderView
 	>=dev-perl/Catalyst-Model-LDAP-0.16_pre1
@@ -24,17 +25,20 @@ RDEPEND="dev-lang/perl
 	dev-perl/Catalyst-Plugin-Session
 	dev-perl/Catalyst-Plugin-Session-State-Cookie
 	dev-perl/Catalyst-Plugin-Session-Store-File
+	dev-perl/Catalyst-Plugin-StackTrace
 	dev-perl/Catalyst-View-TT
 	dev-perl/Class-Accessor
+	dev-perl/Class-C3
 	dev-perl/Lingua-EN-Numbers
 	dev-perl/perl-ldap
 	virtual/perl-Scalar-List-Utils
 	dev-perl/Tree-Simple
-	dev-perl/UNIVERSAL-require
 	dev-perl/URI
 	dev-perl/yaml"
 DEPEND="${RDEPEND}
 	test? (
+		virtual/perl-File-Spec
+		dev-perl/Test-MockObject
 		virtual/perl-Test-Simple
 		dev-perl/Test-WWW-Mechanize-Catalyst
 	)"
