@@ -41,4 +41,5 @@ DEPEND="${RDEPEND}
 		dev-perl/Test-MockObject
 		virtual/perl-Test-Simple
 		dev-perl/Test-WWW-Mechanize-Catalyst
+		dev-perl/Text-vCard
 	)"
