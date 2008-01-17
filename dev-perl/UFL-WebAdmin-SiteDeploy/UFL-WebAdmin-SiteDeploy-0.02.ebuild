@@ -16,7 +16,9 @@ SRC_TEST="do"
 
 IUSE="test"
 RDEPEND="dev-lang/perl
+	dev-perl/Class-Accessor
 	dev-perl/SVN-Notify
+	dev-perl/SVN-Notify-Config
 	dev-perl/SVN-Notify-Mirror
 	dev-util/subversion
 	net-misc/openssh"
@@ -25,3 +27,11 @@ DEPEND="${RDEPEND}
 		virtual/perl-File-Spec
 		virtual/perl-Test-Simple
 	)"
+
+pkg_setup() {
+	if ! perl -MSVN::Client < /dev/null 2> /dev/null; then
+		eerror "SVN::Client missing or outdated."
+		eerror "Please emerge dev-util/subversion with the perl USE flag."
+		die "Need Subversion compiled with Perl bindings"
+	fi
+}
