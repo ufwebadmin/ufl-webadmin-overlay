@@ -4,12 +4,9 @@
 
 inherit perl-module
 
-MY_P="${P/pre/0}"
-S="${WORKDIR}/${MY_P}"
-
 DESCRIPTION="Catalyst application for the University of Florida Approval Tracking System"
 HOMEPAGE="http://approval.ufl.edu/"
-SRC_URI="http://dev.webadmin.ufl.edu/distfiles/${MY_P}.tar.gz"
+SRC_URI="http://dev.webadmin.ufl.edu/distfiles/${P}.tar.gz"
 LICENSE="|| ( Artistic GPL-2 )"
 
 SLOT="0"
