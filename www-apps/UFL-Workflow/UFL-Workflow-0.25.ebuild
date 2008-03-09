@@ -18,10 +18,10 @@ IUSE="test"
 RDEPEND="dev-lang/perl
 	>=dev-perl/Catalyst-Runtime-5.7006
 	dev-perl/Catalyst-Action-RenderView
+	dev-perl/Catalyst-Authentication-Store-DBIx-Class
 	dev-perl/Catalyst-Model-DBIC-Schema
 	dev-perl/Catalyst-Model-LDAP
-	dev-perl/Catalyst-Plugin-Authentication
-	dev-perl/Catalyst-Plugin-Authentication-Store-DBIC
+	>=dev-perl/Catalyst-Plugin-Authentication-0.10000
 	dev-perl/Catalyst-Plugin-Authorization-ACL
 	dev-perl/Catalyst-Plugin-Authorization-Roles
 	dev-perl/Catalyst-Plugin-ConfigLoader
@@ -45,6 +45,7 @@ RDEPEND="dev-lang/perl
 	virtual/perl-Scalar-List-Utils
 	dev-perl/Template-Plugin-Textile
 	dev-perl/Template-Toolkit
+	>=dev-perl/UFL-Controller-Authentication-0.02
 	dev-perl/yaml"
 DEPEND="${RDEPEND}
 	test? (
