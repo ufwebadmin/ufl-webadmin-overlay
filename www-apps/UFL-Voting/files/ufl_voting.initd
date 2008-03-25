@@ -1,0 +1,30 @@
+#!/sbin/runscript
+
+UFL_VOTING_USER=${UFL_VOTING_USER:-apache}
+UFL_VOTING_GROUP=${UFL_VOTING_GROUP:-apache}
+UFL_VOTING_SCRIPT=${UFL_VOTING_SCRIPT:-/usr/bin/ufl_voting_fastcgi.pl}
+UFL_VOTING_PIDFILE=${UFL_VOTING_PIDFILE:-/var/run/fastcgi/${SVCNAME}.pid}
+UFL_VOTING_SOCKET=${UFL_VOTING_SOCKET:-/var/run/fastcgi/${SVCNAME}.socket}
+UFL_VOTING_NPROC=${UFL_VOTING_NPROC:-1}
+
+depend() {
+	need net
+	use dns logger postgresql
+	before apache2
+}
+
+start() {
+	ebegin "Starting ${SVCNAME} (${UFL_VOTING_SCRIPT})"
+	exec start-stop-daemon --start \
+		--chuid ${UFL_VOTING_USER}:${UFL_VOTING_GROUP} \
+		--exec "${UFL_VOTING_SCRIPT}" \
+		-- -l "${UFL_VOTING_SOCKET}" -n "${UFL_VOTING_NPROC}" -p "${UFL_VOTING_PIDFILE}" -d
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping ${SVCNAME}"
+	start-stop-daemon --stop \
+		--pidfile "${UFL_VOTING_PIDFILE}"
+	eend $?
+}
