@@ -16,10 +16,10 @@ SRC_TEST="do"
 
 IUSE="test"
 RDEPEND="dev-lang/perl
-	dev-perl/Catalyst-Runtime
+	>=dev-perl/Catalyst-Runtime-5.7006
+	>=dev-perl/Catalyst-Authentication-Store-DBIx-Class-0.102
 	dev-perl/Catalyst-Model-DBIC-Schema
-	dev-perl/Catalyst-Plugin-Authentication
-	dev-perl/Catalyst-Plugin-Authentication-Store-DBIC
+	>=dev-perl/Catalyst-Plugin-Authentication-0.10003
 	dev-perl/Catalyst-Plugin-Authorization-ACL
 	dev-perl/Catalyst-Plugin-Authorization-Roles
 	dev-perl/Catalyst-Plugin-ConfigLoader
@@ -27,7 +27,7 @@ RDEPEND="dev-lang/perl
 	dev-perl/Catalyst-Plugin-FormValidator-Simple
 	dev-perl/Catalyst-Plugin-StackTrace
 	dev-perl/Catalyst-Plugin-Static-Simple
-	dev-perl/Catalyst-Plugin-Unicode
+	dev-perl/Catalyst-Plugin-Unicode-Encoding
 	dev-perl/Catalyst-View-TT
 	>=dev-perl/DateTime-0.23
 	dev-perl/DateTime-Format-Mail
@@ -37,6 +37,7 @@ RDEPEND="dev-lang/perl
 	>=dev-perl/DBIx-Class-0.05999_pre1
 	dev-perl/Module-Find
 	virtual/perl-Scalar-List-Utils
+	dev-perl/UFL-Controller-Authentication
 	dev-perl/yaml"
 DEPEND="${RDEPEND}
 	test? ( virtual/perl-Test-Simple )"
