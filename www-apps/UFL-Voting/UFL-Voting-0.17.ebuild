@@ -37,7 +37,7 @@ RDEPEND="dev-lang/perl
 	>=dev-perl/DBIx-Class-0.05999_pre1
 	dev-perl/Module-Find
 	virtual/perl-Scalar-List-Utils
-	dev-perl/UFL-Controller-Authentication
+	>=dev-perl/UFL-Controller-Authentication-0.03
 	dev-perl/yaml"
 DEPEND="${RDEPEND}
 	test? ( virtual/perl-Test-Simple )"
