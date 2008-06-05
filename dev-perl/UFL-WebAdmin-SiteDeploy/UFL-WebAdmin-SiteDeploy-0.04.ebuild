@@ -16,15 +16,26 @@ SRC_TEST="do"
 
 IUSE="test"
 RDEPEND="dev-lang/perl
-	dev-perl/Class-Accessor
+	dev-perl/IO-String
+	dev-perl/Log-Log4perl
+	dev-perl/Moose
+	dev-perl/MooseX-App-Cmd
+	dev-perl/MooseX-Getopt
+	dev-perl/Path-Class
 	dev-perl/SVN-Notify
 	dev-perl/SVN-Notify-Config
 	dev-perl/SVN-Notify-Mirror
+	dev-perl/UFL-WebAdmin-SVN
+	dev-perl/URI
+	dev-perl/yaml
 	dev-util/subversion
-	net-misc/openssh"
+	net-misc/openssh
+	net-misc/rsync
+	sys-apps/coreutils"
 DEPEND="${RDEPEND}
 	test? (
 		virtual/perl-File-Spec
+		dev-perl/Test-Log4perl
 		virtual/perl-Test-Simple
 	)"
 
