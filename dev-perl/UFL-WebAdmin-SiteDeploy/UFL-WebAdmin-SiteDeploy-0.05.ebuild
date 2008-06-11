@@ -16,6 +16,7 @@ SRC_TEST="do"
 
 IUSE="test"
 RDEPEND="dev-lang/perl
+	dev-perl/DateTime
 	dev-perl/IO-String
 	dev-perl/Log-Log4perl
 	dev-perl/Moose
@@ -28,9 +29,9 @@ RDEPEND="dev-lang/perl
 	dev-perl/UFL-WebAdmin-SVN
 	dev-perl/URI
 	dev-perl/yaml
-	dev-util/subversion
-	net-misc/openssh
 	net-misc/rsync
+	net-misc/openssh
+	dev-util/subversion
 	sys-apps/coreutils"
 DEPEND="${RDEPEND}
 	test? (
