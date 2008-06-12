@@ -35,8 +35,10 @@ RDEPEND="dev-lang/perl
 	sys-apps/coreutils"
 DEPEND="${RDEPEND}
 	test? (
-		virtual/perl-File-Spec
+		dev-perl/Path-Class
 		dev-perl/Test-Log4perl
+		dev-perl/URI
+		dev-util/subversion
 		virtual/perl-Test-Simple
 	)"
 
