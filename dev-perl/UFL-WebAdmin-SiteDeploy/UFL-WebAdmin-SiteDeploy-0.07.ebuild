@@ -11,7 +11,7 @@ LICENSE="|| ( Artistic GPL-2 )"
 
 SLOT="0"
 KEYWORDS="amd64 x86"
-RESTRICT="nomirror"
+RESTRICT="mirror"
 SRC_TEST="do"
 
 IUSE="test"
@@ -22,24 +22,27 @@ RDEPEND="dev-lang/perl
 	dev-perl/Moose
 	dev-perl/MooseX-App-Cmd
 	dev-perl/MooseX-Getopt
+	dev-perl/Path-Abstract
 	dev-perl/Path-Class
-	dev-perl/SVN-Notify
 	dev-perl/SVN-Notify-Config
 	dev-perl/SVN-Notify-Mirror
 	dev-perl/UFL-WebAdmin-SVN
 	dev-perl/URI
+	dev-perl/VCI
 	dev-perl/yaml
+	sys-apps/coreutils
 	net-misc/rsync
 	net-misc/openssh
-	dev-util/subversion
-	sys-apps/coreutils"
+	dev-util/subversion"
 DEPEND="${RDEPEND}
 	test? (
+		dev-perl/Moose
 		dev-perl/Path-Class
+		dev-perl/Log-Log4perl
 		dev-perl/Test-Log4perl
-		dev-perl/URI
-		dev-util/subversion
 		virtual/perl-Test-Simple
+		dev-perl/URI
+		dev-perl/VCI
 	)"
 
 pkg_setup() {
