@@ -19,6 +19,7 @@ RDEPEND="dev-lang/perl
 	>=dev-perl/Catalyst-Runtime-5.7012
 	dev-perl/Catalyst-Action-RenderView
 	dev-perl/Catalyst-Plugin-Authentication
+	dev-perl/Catalyst-Plugin-AutoRestart
 	dev-perl/Catalyst-Plugin-ConfigLoader
 	dev-perl/Catalyst-Plugin-StackTrace
 	dev-perl/Catalyst-Plugin-Static-Simple
