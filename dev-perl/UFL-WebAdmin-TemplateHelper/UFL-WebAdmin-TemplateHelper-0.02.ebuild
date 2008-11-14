@@ -17,6 +17,12 @@ SRC_TEST="do"
 IUSE="test"
 RDEPEND="dev-lang/perl
 	virtual/perl-File-Spec
-	dev-perl/text-template"
+	dev-perl/HTML-Parser
+	dev-perl/libwww-perl
+	dev-perl/text-template
+	dev-perl/XML-RSS"
 DEPEND="${RDEPEND}
-	test? ( virtual/perl-Test-Simple )"
+	test? (
+		virtual/perl-File-Spec
+		virtual/perl-Test-Simple
+	)"
