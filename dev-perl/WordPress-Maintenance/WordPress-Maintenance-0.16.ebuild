@@ -27,4 +27,8 @@ RDEPEND="dev-lang/perl
 	dev-perl/URI
 	dev-perl/yaml"
 DEPEND="${RDEPEND}
-	test? ( virtual/perl-Test-Simple )"
+	test? (
+		virtual/perl-File-Spec
+		dev-perl/Template-Toolkit
+		virtual/perl-Test-Simple
+	)"
