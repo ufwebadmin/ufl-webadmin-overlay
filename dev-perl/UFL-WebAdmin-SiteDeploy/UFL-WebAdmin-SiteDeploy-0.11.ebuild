@@ -22,6 +22,7 @@ RDEPEND="dev-lang/perl
 	dev-perl/Moose
 	dev-perl/MooseX-App-Cmd
 	dev-perl/MooseX-Getopt
+	dev-perl/Net-SSH
 	dev-perl/Path-Abstract
 	dev-perl/Path-Class
 	dev-perl/SVN-Notify-Config
