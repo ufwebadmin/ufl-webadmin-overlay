@@ -53,3 +53,10 @@ pkg_setup() {
 		die "Need Subversion compiled with Perl bindings"
 	fi
 }
+
+src_install() {
+	perl-module_src_install
+
+	insinto /etc/logrotate.d
+	newins "${FILESDIR}"/UFL-WebAdmin-SiteDeploy.logrotate UFL-WebAdmin-SiteDeploy
+}
