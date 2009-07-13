@@ -48,10 +48,3 @@ src_install() {
 	newconfd "${FILESDIR}"/ufl_voting.confd ufl_voting
 	newinitd "${FILESDIR}"/ufl_voting.initd ufl_voting
 }
-
-pkg_postinst() {
-	perl-module_pkg_postinst
-
-	ewarn "To use the included init script, you must have dev-perl/Catalyst-Runtime"
-	ewarn "built with the fastcgi USE flag."
-}
