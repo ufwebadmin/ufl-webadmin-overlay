@@ -46,10 +46,3 @@ src_install() {
 	newconfd "${FILESDIR}"/ufl_webadmin_sitedeploy_web.confd ufl_webadmin_sitedeploy_web
 	newinitd "${FILESDIR}"/ufl_webadmin_sitedeploy_web.initd ufl_webadmin_sitedeploy_web
 }
-
-pkg_postinst() {
-	perl-module_pkg_postinst
-
-	ewarn "To use the included init script, you must have dev-perl/Catalyst-Runtime"
-	ewarn "built with the fastcgi USE flag."
-}
