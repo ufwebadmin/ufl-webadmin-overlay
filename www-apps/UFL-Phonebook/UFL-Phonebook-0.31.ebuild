@@ -20,7 +20,7 @@ RDEPEND="dev-lang/perl
 	>=dev-perl/Catalyst-Runtime-5.7006
 	dev-perl/Catalyst-Action-RenderView
 	>=dev-perl/Catalyst-Model-LDAP-0.16
-	>=dev-perl/Catalyst-Plugin-Authentication-0.10003
+	>=dev-perl/Catalyst-Plugin-Authentication-0.10012
 	dev-perl/Catalyst-Plugin-ConfigLoader
 	dev-perl/Catalyst-Plugin-Session
 	dev-perl/Catalyst-Plugin-Session-State-Cookie
@@ -33,7 +33,6 @@ RDEPEND="dev-lang/perl
 	dev-perl/perl-ldap
 	virtual/perl-Scalar-List-Utils
 	dev-perl/Tree-Simple
-	dev-perl/UFL-Controller-Authentication
 	dev-perl/URI
 	dev-perl/yaml"
 DEPEND="${RDEPEND}
