@@ -33,7 +33,6 @@ RDEPEND="dev-lang/perl
 	>=dev-perl/Catalyst-View-Email-0.02
 	dev-perl/Catalyst-View-JSON
 	dev-perl/Catalyst-View-TT
-	dev-perl/Class-Accessor
 	>=dev-perl/Class-C3-0.12
 	>=dev-perl/DateTime-Format-DB2-0.05
 	dev-perl/DBD-DB2
@@ -41,11 +40,11 @@ RDEPEND="dev-lang/perl
 	virtual/perl-Digest-MD5
 	dev-perl/FormValidator-Simple
 	dev-perl/FormValidator-Simple-ProfileManager-YAML
+	dev-perl/MIME-Types
 	dev-perl/Module-Find
 	virtual/perl-Scalar-List-Utils
 	dev-perl/Template-Plugin-Textile
 	dev-perl/Template-Toolkit
-	>=dev-perl/UFL-Controller-Authentication-0.02
 	dev-perl/yaml"
 DEPEND="${RDEPEND}
 	test? (
