@@ -27,7 +27,6 @@ RDEPEND="dev-lang/perl
 	dev-perl/Catalyst-View-TT
 	dev-perl/Moose
 	dev-perl/parent
-	dev-perl/UFL-Authentication-Credential-GatorLink
 	>=dev-perl/UFL-WebAdmin-SiteDeploy-0.07
 	dev-perl/VCI
 	dev-perl/yaml"
