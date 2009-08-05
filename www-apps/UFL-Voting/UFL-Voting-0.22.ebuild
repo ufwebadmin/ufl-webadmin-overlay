@@ -19,7 +19,7 @@ RDEPEND="dev-lang/perl
 	>=dev-perl/Catalyst-Runtime-5.7006
 	>=dev-perl/Catalyst-Authentication-Store-DBIx-Class-0.102
 	dev-perl/Catalyst-Model-DBIC-Schema
-	>=dev-perl/Catalyst-Plugin-Authentication-0.10003
+	>=dev-perl/Catalyst-Plugin-Authentication-0.10012
 	dev-perl/Catalyst-Plugin-Authorization-ACL
 	dev-perl/Catalyst-Plugin-Authorization-Roles
 	dev-perl/Catalyst-Plugin-ConfigLoader
@@ -37,7 +37,6 @@ RDEPEND="dev-lang/perl
 	>=dev-perl/DBIx-Class-0.05999_pre1
 	dev-perl/Module-Find
 	virtual/perl-Scalar-List-Utils
-	dev-perl/UFL-Authentication-Credential-GatorLink
 	dev-perl/yaml"
 DEPEND="${RDEPEND}
 	test? ( virtual/perl-Test-Simple )"
