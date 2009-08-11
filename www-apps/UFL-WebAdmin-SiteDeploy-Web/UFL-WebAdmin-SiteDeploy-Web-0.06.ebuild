@@ -26,7 +26,7 @@ RDEPEND="dev-lang/perl
 	dev-perl/Catalyst-Plugin-Unicode-Encoding
 	dev-perl/Catalyst-View-TT
 	dev-perl/Moose
-	dev-perl/parent
+	virtual/perl-parent
 	>=dev-perl/UFL-WebAdmin-SiteDeploy-0.07
 	dev-perl/VCI
 	dev-perl/yaml"
