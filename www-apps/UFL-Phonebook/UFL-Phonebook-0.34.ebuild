@@ -22,9 +22,6 @@ RDEPEND="dev-lang/perl
 	>=dev-perl/Catalyst-Model-LDAP-0.16
 	>=dev-perl/Catalyst-Plugin-Authentication-0.10012
 	dev-perl/Catalyst-Plugin-ConfigLoader
-	dev-perl/Catalyst-Plugin-Session
-	dev-perl/Catalyst-Plugin-Session-State-Cookie
-	dev-perl/Catalyst-Plugin-Session-Store-File
 	dev-perl/Catalyst-Plugin-StackTrace
 	dev-perl/Catalyst-View-TT
 	dev-perl/Class-Accessor
