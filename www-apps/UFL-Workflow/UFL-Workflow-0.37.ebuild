@@ -6,7 +6,7 @@ inherit perl-module
 
 DESCRIPTION="Catalyst application for the University of Florida Approval Tracking System"
 HOMEPAGE="http://approval.ufl.edu/"
-SRC_URI="http://dev.webadmin.ufl.edu/distfiles/${P}.tar.gz"
+SRC_URI="http://ufl-workflow.googlecode.com/files/${P}.tar.gz"
 LICENSE="|| ( Artistic GPL-2 )"
 
 SLOT="0"
