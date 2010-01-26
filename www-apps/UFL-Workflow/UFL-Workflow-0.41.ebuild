@@ -33,7 +33,7 @@ RDEPEND="dev-lang/perl
 	>=dev-perl/Catalyst-View-Email-0.10
 	dev-perl/Catalyst-View-JSON
 	dev-perl/Catalyst-View-TT
-	>=dev-perl/Class-C3-0.12
+	dev-perl/Class-Accessor
 	>=dev-perl/DateTime-Format-DB2-0.05
 	dev-perl/DBD-DB2
 	>=dev-perl/DBIx-Class-0.07000
@@ -42,6 +42,7 @@ RDEPEND="dev-lang/perl
 	dev-perl/FormValidator-Simple-ProfileManager-YAML
 	dev-perl/MIME-Types
 	dev-perl/Module-Find
+	dev-perl/MRO-Compat
 	virtual/perl-Scalar-List-Utils
 	dev-perl/Template-Plugin-Textile
 	dev-perl/Template-Toolkit
@@ -49,6 +50,7 @@ RDEPEND="dev-lang/perl
 DEPEND="${RDEPEND}
 	test? (
 		dev-perl/DBD-SQLite
+		dev-perl/Test-MockObject
 		virtual/perl-Test-Simple
 		dev-perl/Test-YAML-Valid
 	)"
