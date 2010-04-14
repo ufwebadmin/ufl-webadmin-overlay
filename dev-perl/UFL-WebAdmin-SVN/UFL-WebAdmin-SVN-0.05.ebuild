@@ -19,6 +19,7 @@ RDEPEND="dev-lang/perl
 	dev-perl/SVN-Notify
 	dev-util/subversion
 	sys-apps/debianutils
+	sys-apps/findutils
 	trac? ( www-apps/trac )"
 DEPEND="${RDEPEND}
 	test? ( virtual/perl-Test-Simple )"
