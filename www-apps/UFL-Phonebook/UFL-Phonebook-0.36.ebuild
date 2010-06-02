@@ -20,18 +20,23 @@ RDEPEND="dev-lang/perl
 	>=dev-perl/Catalyst-Runtime-5.80019
 	dev-perl/Catalyst-Action-RenderView
 	>=dev-perl/Catalyst-Model-LDAP-0.16
-	>=dev-perl/Catalyst-Plugin-Authentication-0.10012
+	dev-perl/Catalyst-Plugin-Authentication
+	dev-perl/Catalyst-Plugin-Authorization-Roles
 	dev-perl/Catalyst-Plugin-ConfigLoader
 	dev-perl/Catalyst-Plugin-StackTrace
+	dev-perl/Catalyst-Plugin-Static-Simple
 	dev-perl/Catalyst-View-TT
 	dev-perl/Class-Accessor
-	dev-perl/Class-C3
+	dev-perl/Data-Throttler
+	dev-perl/DateTime
 	dev-perl/Lingua-EN-Numbers
+	dev-perl/MRO-Compat
+	dev-perl/Moose
 	dev-perl/perl-ldap
 	virtual/perl-Scalar-List-Utils
 	dev-perl/Tree-Simple
 	dev-perl/URI
-	dev-perl/yaml"
+	dev-perl/YAML-LibYAML"
 DEPEND="${RDEPEND}
 	test? (
 		virtual/perl-File-Spec
