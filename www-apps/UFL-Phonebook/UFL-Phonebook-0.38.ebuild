@@ -23,6 +23,7 @@ RDEPEND="dev-lang/perl
 	dev-perl/Catalyst-Plugin-Authentication
 	dev-perl/Catalyst-Plugin-Authorization-Roles
 	dev-perl/Catalyst-Plugin-ConfigLoader
+	dev-perl/Catalyst-Plugin-ErrorCatcher
 	dev-perl/Catalyst-Plugin-StackTrace
 	dev-perl/Catalyst-Plugin-Static-Simple
 	dev-perl/Catalyst-View-TT
