@@ -17,7 +17,7 @@ SRC_TEST="do"
 IUSE="test trac"
 RDEPEND="dev-lang/perl
 	dev-perl/SVN-Notify
-	dev-util/subversion
+	dev-vcs/subversion
 	sys-apps/debianutils
 	sys-apps/findutils
 	trac? ( www-apps/trac )"
