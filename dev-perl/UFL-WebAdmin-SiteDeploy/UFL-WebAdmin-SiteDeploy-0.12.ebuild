@@ -34,7 +34,7 @@ RDEPEND="dev-lang/perl
 	sys-apps/coreutils
 	net-misc/rsync
 	net-misc/openssh
-	dev-util/subversion"
+	dev-vcs/subversion"
 DEPEND="${RDEPEND}
 	test? (
 		dev-perl/Moose
