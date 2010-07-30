@@ -21,13 +21,14 @@ RDEPEND="dev-lang/perl
 	>=dev-perl/Catalyst-Plugin-Authentication-0.10012
 	dev-perl/Catalyst-Plugin-AutoRestart
 	dev-perl/Catalyst-Plugin-ConfigLoader
+	dev-perl/Catalyst-Plugin-ErrorCatcher
 	dev-perl/Catalyst-Plugin-StackTrace
 	dev-perl/Catalyst-Plugin-Static-Simple
 	dev-perl/Catalyst-Plugin-Unicode-Encoding
 	dev-perl/Catalyst-View-TT
 	dev-perl/Moose
 	virtual/perl-parent
-	>=dev-perl/UFL-WebAdmin-SiteDeploy-0.07
+	>=dev-perl/UFL-WebAdmin-SiteDeploy-0.13
 	dev-perl/VCI
 	dev-perl/yaml"
 DEPEND="${RDEPEND}
@@ -36,7 +37,7 @@ DEPEND="${RDEPEND}
 		virtual/perl-Test-Simple
 		dev-perl/Test-WWW-Mechanize-Catalyst
 		dev-perl/Test-YAML-Valid
-		>=dev-perl/UFL-WebAdmin-SiteDeploy-0.07
+		>=dev-perl/UFL-WebAdmin-SiteDeploy-0.13
 	)"
 
 src_install() {
