@@ -20,6 +20,6 @@ RDEPEND="dev-lang/perl
 	dev-vcs/subversion
 	sys-apps/debianutils
 	sys-apps/findutils
-	trac? ( www-apps/trac )"
+	trac? ( >=www-apps/trac-0.12 )"
 DEPEND="${RDEPEND}
 	test? ( virtual/perl-Test-Simple )"
