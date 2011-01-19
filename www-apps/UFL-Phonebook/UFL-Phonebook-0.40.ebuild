@@ -17,7 +17,7 @@ SRC_TEST="do"
 IUSE="test"
 RDEPEND="dev-lang/perl
 	dev-perl/Authen-SASL
-	>=dev-perl/Catalyst-Runtime-5.80019
+	>=dev-perl/Catalyst-Runtime-5.800.190
 	dev-perl/Catalyst-Action-RenderView
 	>=dev-perl/Catalyst-Model-LDAP-0.16
 	dev-perl/Catalyst-Plugin-Authentication
