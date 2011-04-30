@@ -18,7 +18,7 @@ IUSE="test"
 RDEPEND="dev-lang/perl
 	>=dev-perl/Catalyst-Runtime-5.700.120
 	dev-perl/Catalyst-Action-RenderView
-	>=dev-perl/Catalyst-Plugin-Authentication-0.10012
+	>=dev-perl/Catalyst-Plugin-Authentication-0.100.120
 	dev-perl/Catalyst-Plugin-AutoRestart
 	dev-perl/Catalyst-Plugin-ConfigLoader
 	dev-perl/Catalyst-Plugin-ErrorCatcher
