@@ -6,20 +6,15 @@ EAPI=4
 
 inherit perl-module
 
-GITHUB_USER="ufwebadmin"
-GITHUB_HASH="c7d95f4"
-
 DESCRIPTION="SVN helpers for Web Administration"
 HOMEPAGE="http://www.webadmin.ufl.edu/"
-SRC_URI="https://github.com/${GITHUB_USER}/${PN}/tarball/${PV} -> ${P}.tar.gz"
+SRC_URI="https://github.com/downloads/ufwebadmin/${PN}/${P}.tar.gz"
 LICENSE="|| ( Artistic GPL-2 )"
 
 SLOT="0"
 KEYWORDS="amd64 x86"
 RESTRICT="mirror"
 SRC_TEST="do"
-
-S="${WORKDIR}/${GITHUB_USER}-${PN}-${GITHUB_HASH}"
 
 IUSE="test trac"
 RDEPEND="dev-lang/perl
