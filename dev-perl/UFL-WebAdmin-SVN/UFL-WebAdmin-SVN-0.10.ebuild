@@ -18,10 +18,26 @@ SRC_TEST="do"
 
 IUSE="test trac"
 RDEPEND="dev-lang/perl
+	dev-perl/Config-Any
+	dev-perl/Config-Tiny
+	virtual/perl-Getopt-Long
+	dev-perl/Hash-Merge
+	dev-perl/Moose
 	dev-perl/SVN-Notify
 	dev-vcs/subversion
 	sys-apps/debianutils
 	sys-apps/findutils
 	trac? ( >=www-apps/trac-0.12 )"
 DEPEND="${RDEPEND}
-	test? ( virtual/perl-Test-Simple )"
+	test? (
+		dev-perl/IO-String
+		dev-perl/Path-Class
+		virtual/perl-Test-Simple
+	)"
+
+src_install() {
+	perl-module_src_install
+
+	insinto /etc
+	doins "${FILESDIR}/ufl-webadmin-svn.ini" || die
+}
