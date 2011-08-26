@@ -1,0 +1,11 @@
+# ChangeLog for dev-perl/UFL-WebAdmin-TemplateHelper
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*UFL-WebAdmin-TemplateHelper-0.05 (26 Aug 2011)
+
+  26 Aug 2011; Daniel Westermann-Clark <dwc@pobox.com>
+  -UFL-WebAdmin-TemplateHelper-0.04.ebuild,
+  +UFL-WebAdmin-TemplateHelper-0.05.ebuild:
+  Bump dev-perl/UFL-WebAdmin-TemplateHelper
+

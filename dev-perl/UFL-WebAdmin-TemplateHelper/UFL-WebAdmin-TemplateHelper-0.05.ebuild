@@ -18,13 +18,17 @@ SRC_TEST="do"
 
 IUSE="test"
 RDEPEND="dev-lang/perl
+	dev-perl/Class-Accessor
+	dev-perl/DateTime
 	virtual/perl-File-Spec
 	dev-perl/HTML-Parser
+	dev-perl/iCal-Parser
 	dev-perl/libwww-perl
 	dev-perl/text-template
 	dev-perl/XML-RSS"
 DEPEND="${RDEPEND}
 	test? (
+		virtual/perl-File-Path
 		virtual/perl-File-Spec
 		virtual/perl-Test-Simple
 	)"
