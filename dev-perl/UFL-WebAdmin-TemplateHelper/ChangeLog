@@ -2,6 +2,13 @@
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*UFL-WebAdmin-TemplateHelper-0.06 (23 Sep 2011)
+
+  23 Sep 2011; Daniel Westermann-Clark <dwc@pobox.com>
+  -UFL-WebAdmin-TemplateHelper-0.05.ebuild,
+  +UFL-WebAdmin-TemplateHelper-0.06.ebuild:
+  Bump
+
 *UFL-WebAdmin-TemplateHelper-0.05 (26 Aug 2011)
 
   26 Aug 2011; Daniel Westermann-Clark <dwc@pobox.com>
